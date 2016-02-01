@@ -273,7 +273,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
             dayTime.setToNow();
 
             // we start at the day returned by local time. Otherwise this is a mess.
-            int julianStartDay = Time.getJulianDay(System.currentTimeMillis(), dayTime.gmtoff);
+            int  julianStartDay = Time.getJulianDay(System.currentTimeMillis(), dayTime.gmtoff);
 
             // now we work exclusively in UTC
             dayTime = new Time();
